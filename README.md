@@ -10,8 +10,4 @@ const xlsx-mysql = require('xlsx-mysql')
 
 ## License
 
-<<<<<<< HEAD
 Apache 2.0
-=======
-Apache 2.0
->>>>>>> 9562140c4f8d060939dd6d13dc62268dcf108d7f
