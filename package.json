@@ -1,0 +1,21 @@
+{
+  "name": "xlsx-mysql",
+  "version": "1.0.0",
+  "description": "A package that converts multi paged workbooks into mysql commands",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "XLSX",
+    "MYSQL",
+    "WORKBOOK",
+    "xlsx"
+  ],
+  "author": "Rizwaan Abdul",
+  "license": "ISC",
+  "dependencies": {
+    "csv-mysql": "^1.0.3",
+    "node-xlsx": "^0.12.1"
+  }
+}
