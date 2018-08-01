@@ -1,20 +1,33 @@
 {
   "name": "xlsx-mysql",
   "version": "1.0.0",
-  "description": "> compares a xlsx worbook to a mysql database and applies the changes found in workbook",
+  "description": "compares a xlsx worbook to a mysql database and applies the changes found in workbook",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap --coverage test/index.js",
+    "posttest": "standard"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Riz-waan/xlsx-mysql.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Rizwaan Abdul",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/Riz-waan/xlsx-mysql/issues"
   },
-  "homepage": "https://github.com/Riz-waan/xlsx-mysql#readme"
+  "homepage": "https://github.com/Riz-waan/xlsx-mysql#readme",
+  "dependencies": {
+    "adjectives": "^1.0.2",
+    "animals": "0.0.3",
+    "csv-mysql": "^1.0.3",
+    "node-xlsx": "^0.12.1",
+    "random-number-in-range": "^1.0.2"
+  },
+  "devDependencies": {
+    "nyc": "^12.0.2",
+    "standard": "^11.0.1",
+    "tap": "^12.0.1"
+  }
 }
