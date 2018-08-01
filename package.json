@@ -1,21 +1,20 @@
 {
   "name": "xlsx-mysql",
   "version": "1.0.0",
-  "description": "A package that converts multi paged workbooks into mysql commands",
+  "description": "> compares a xlsx worbook to a mysql database and applies the changes found in workbook",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "XLSX",
-    "MYSQL",
-    "WORKBOOK",
-    "xlsx"
-  ],
-  "author": "Rizwaan Abdul",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Riz-waan/xlsx-mysql.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "csv-mysql": "^1.0.3",
-    "node-xlsx": "^0.12.1"
-  }
+  "bugs": {
+    "url": "https://github.com/Riz-waan/xlsx-mysql/issues"
+  },
+  "homepage": "https://github.com/Riz-waan/xlsx-mysql#readme"
 }
