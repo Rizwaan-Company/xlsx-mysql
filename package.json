@@ -1,13 +1,15 @@
 {
   "name": "xlsx-mysql",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "compares a xlsx worbook to a mysql database and applies the changes found in workbook",
   "main": "index.js",
   "scripts": {
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Rizwaan-Company/xlsx-mysql.git"
+    "url": "https://github.com/Rizwaan-Company/xlsx-mysql.git"
   },
   "keywords": [],
   "author": "Rizwaan Abdul",
@@ -19,5 +21,9 @@
   "dependencies": {
     "csv-mysql": "^1.0.3",
     "node-xlsx": "^0.12.1"
+  },
+  "devDependencies": {
+    "semantic-release": "^15.9.3",
+    "travis-deploy-once": "^5.0.1"
   }
 }
