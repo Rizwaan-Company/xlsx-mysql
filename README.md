@@ -18,6 +18,8 @@ The following things need to be kept in mind when using:
 * A delimiter needs to be used.
 * If only the last sheet's data is being processed then take a look at the waitT variable and add extra time to allow for the sheet to be processed.
 
+For more information please refer to this link: https://github.com/rajaru/csv-mysql#readme
+
 ## Installation 
 ```
 yarn add xlsx-mysql
