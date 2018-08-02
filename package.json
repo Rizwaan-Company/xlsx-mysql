@@ -1,6 +1,6 @@
 {
   "name": "xlsx-mysql",
-  "version": "0.0.0-development",
+  "version": "0.0.0-semantically-released",
   "description": "compares a xlsx worbook to a mysql database and applies the changes found in workbook",
   "main": "index.js",
   "scripts": {
