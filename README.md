@@ -43,7 +43,7 @@ var optionsZ = {
         delimiter: '+'
     }
 }
-var locationZ = __dirname + '/zorin.xlsx';
+var locationZ = __dirname + '/file.xlsx';
 var waitT = 1000;
 
 
