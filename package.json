@@ -4,8 +4,6 @@
   "description": "compares a xlsx worbook to a mysql database and applies the changes found in workbook",
   "main": "index.js",
   "scripts": {
-    "test": "tap --coverage test/index.js",
-    "posttest": "standard"
   },
   "repository": {
     "type": "git",
@@ -19,15 +17,7 @@
   },
   "homepage": "https://github.com/Riz-waan/xlsx-mysql#readme",
   "dependencies": {
-    "adjectives": "^1.0.2",
-    "animals": "0.0.3",
     "csv-mysql": "^1.0.3",
-    "node-xlsx": "^0.12.1",
-    "random-number-in-range": "^1.0.2"
-  },
-  "devDependencies": {
-    "nyc": "^12.0.2",
-    "standard": "^11.0.1",
-    "tap": "^12.0.1"
+    "node-xlsx": "^0.12.1"
   }
 }
