@@ -2,7 +2,7 @@ module.exports = (locationXLSXtoMYSQL, optionsXLSXtoMYSQL, waitT) => {
     var xlsx = require('node-xlsx');
     var fs = require('fs');
     var obj = xlsx.parse(locationXLSXtoMYSQL); // parses a file
-    resulrt = '';
+    resulrt = ' ';
 
     for (var i = 0; i < obj.length; i++) {
         (function(i) {
