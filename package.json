@@ -7,15 +7,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Riz-waan/xlsx-mysql.git"
+    "url": "git+https://github.com/Rizwaan-Company/xlsx-mysql.git"
   },
   "keywords": [],
   "author": "Rizwaan Abdul",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/Riz-waan/xlsx-mysql/issues"
+    "url": "https://github.com/Rizwaan-Company/xlsx-mysql/issues"
   },
-  "homepage": "https://github.com/Riz-waan/xlsx-mysql#readme",
+  "homepage": "https://github.com/Rizwaan-Company/xlsx-mysql#readme",
   "dependencies": {
     "csv-mysql": "^1.0.3",
     "node-xlsx": "^0.12.1"
