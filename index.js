@@ -1,33 +1,14 @@
-module.exports = (locationXLSXtoMYSQL, optionsXLSXtoMYSQL, waitT) => {
-    var xlsx = require('node-xlsx');
-    var fs = require('fs');
-    var obj = xlsx.parse(locationXLSXtoMYSQL); // parses a file
-    resulrt = ' ';
+const xlsx = require('node-xlsx');
 
-    for (var i = 0; i < obj.length; i++) {
-        (function(i) {
-            setTimeout(function() {
-                delete rows;
-                delete sheet;
-                rows = [];
-                sheet = obj[i];
-
-                for (var j = 0; j < sheet['data'].length; j++) {
-
-                    while (sheet['data'][j].length < sheet['data'][0].length) {
-                        sheet['data'][j].push('');
-                    }
-                    while (sheet['data'][j].length > sheet['data'][0].length) {
-                        sheet['data'][j].pop();
-                    }
-                    rows.push(sheet['data'][j]);
-
-                }
-
-                return csvPARxlsxmysql(optionsXLSXtoMYSQL.csv.delimiter, optionsXLSXtoMYSQL, i, obj.length);
-            }, waitT * i);
-        })(i);
+const xlsxToMysql = (config) => {
+    const xlsxFile = checkForFile(config.locationXLSXtoMYSQL);
+    if (xlsxFile.error) {
+        return xlsxFile;
     }
+    resulrt = ' ';
+    sheet = xlsxFile[0].name;
+    rows = xlsxFile[0].data
+    return csvPARxlsxmysql(config.optionsXLSXtoMYSQL.csv.delimiter, config.optionsXLSXtoMYSQL, 0, xlsxFile.length);
 }
 
 function csvPARxlsxmysql(delim, options, q, objL) {
@@ -38,21 +19,41 @@ function csvPARxlsxmysql(delim, options, q, objL) {
     var data = writeStr;
 
 
-    options["table"] = sheet['name'];
     return upload(data, options, q, objL);
 }
 
 function upload(data, options, i, objL) {
-
     var cm = require('csv-mysql');
-    cm.import(options, data, function(err, txt) {
+    cm.import(options, data, function (err, txt) {
         if (err) {
-            resulrt += sheet['name'] + ":  " + err + ": " + txt + '\n\n';
+            resulrt += sheet + ":  " + err + ": " + txt + '\n\n';
         } else {
-            resulrt += sheet['name'] + ":  " + 'Import completed\n\n';
+            resulrt += sheet + ":  " + 'Import completed\n\n';
         }
     })
     if (i == objL - 1) {
-        return resulrt;
+        return {
+            ok: true,
+            message: 'file was successfully uploaded'
+        };
+    }
+    else {
+        return {
+            ok: false,
+            message: resulrt
+        };
     }
 }
+
+function checkForFile(filePath) {
+    try {
+        return xlsx.parse(filePath); // parses a file;
+    } catch (err) {
+        return {
+            error: true,
+            message: `file in path ${err.path} not found`
+        };
+    }
+}
+
+module.exports = xlsxToMysql;
