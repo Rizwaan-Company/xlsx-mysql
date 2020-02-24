@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "semantic-release": "semantic-release",
-    "travis-deploy-once": "travis-deploy-once"
+    "travis-deploy-once": "travis-deploy-once",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",

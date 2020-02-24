@@ -1,4 +1,4 @@
-# xlsx-mysql
+# ![XLSX-MYSQL](https://user-images.githubusercontent.com/24848114/62840357-80332680-bc67-11e9-9a84-703ea571a17d.png)
 
 > compares a xlsx worbook to a mysql database and applies the changes found in workbook
 
@@ -18,6 +18,8 @@ The following things need to be kept in mind when using:
 * A delimiter needs to be used.
 * If only the last sheet's data is being processed then take a look at the waitT variable and add extra time to allow for the sheet to be processed.
 
+For more information please refer to this link: https://github.com/rajaru/csv-mysql#readme
+
 ## Installation 
 ```
 yarn add xlsx-mysql
@@ -31,23 +33,23 @@ npm i xlsx-mysql
 ```js
 const XLSXtoMYSQL = require('xlsx-mysql');
 
-var optionsZ = {
-    mysql: {
-        host: '127.0.0.1',
-        user: 'root',
-        database: 'test',
-        password: 'password',
-        port: '3306'
+const optionsZ = {
+    locationXLSXtoMYSQL: './export.xlsx',
+    optionsXLSXtoMYSQL: {
+        mysql: {
+            host: '127.0.0.1',
+            user: 'root',
+            database: 'test',
+            password: 'password',
+            port: '3306'
+        },
+        csv: {
+            delimiter: '+'
+        },
+        table: 'xlsx' //table to save XLSX content
     },
-    csv: {
-        delimiter: '+'
-    }
 }
-var locationZ = __dirname + '/file.xlsx';
-var waitT = 1000;
-
-
-XLSXtoMYSQL(locationZ,optionsZ,waitT);
+XLSXtoMYSQL(optionsZ);
 ```
 
 ## License
