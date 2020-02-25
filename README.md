@@ -33,23 +33,23 @@ npm i xlsx-mysql
 ```js
 const XLSXtoMYSQL = require('xlsx-mysql');
 
-var optionsZ = {
-    mysql: {
-        host: '127.0.0.1',
-        user: 'root',
-        database: 'test',
-        password: 'password',
-        port: '3306'
+const optionsZ = {
+    locationXLSXtoMYSQL: './export.xlsx',
+    optionsXLSXtoMYSQL: {
+        mysql: {
+            host: '127.0.0.1',
+            user: 'root',
+            database: 'test',
+            password: 'password',
+            port: '3306'
+        },
+        csv: {
+            delimiter: '+'
+        },
+        table: 'xlsx' //table to save XLSX content
     },
-    csv: {
-        delimiter: '+'
-    }
 }
-var locationZ = __dirname + '/file.xlsx';
-var waitT = 1000;
-
-
-XLSXtoMYSQL(locationZ,optionsZ,waitT);
+XLSXtoMYSQL(optionsZ);
 ```
 
 ## License
