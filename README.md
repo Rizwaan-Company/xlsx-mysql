@@ -2,6 +2,7 @@
 
 > compares a xlsx worbook to a mysql database and applies the changes found in workbook
 
+![Vesulo Software Solutions](https://img.shields.io/static/v1?label=&message=Vesulo%20Software%20Solutions&color=1069EB&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAADqADAAQAAAABAAAADgAAAACeOBvAAAABV0lEQVQoFWMUyHz9n4EMwESGHrAWFI3T4nhxmiMnxMTgrc8Gl4drzHTiZLBRY2XQlWGGSyIzKny4GS4//gMXAmvk52QEmxY94yNDlAUHXBLGANkGAo/e/YMJMbCAWO2hPAwdW74xXH7yl0FXFiwEVwBigGzr2PKVQQZogLoEC4MAFyNE49aLPxmO3P4NVgxyjo0qK9h0NXFmBjVJZgZudgaG6fG8DG++/GO4/eIvw4m7fxgYQdEhL8zMoCrBDDQNSAMVqwMVv/z4j+EWUJEoLxPD6tM/Gc4/+sPw/Rci5phCzdgZGgK5GMwUWRheABXPO/yD4cO3/wwJcz4zLDn2g0GMj4nh2J3fKJpATmMUzn79/y/Cz2DngkL40du/wABjZ1h2/AfcG2BJKMGCrgkkvvXCT4ZpQD+BAMzvYA4SAY9HJDF4sINCGhcABw4uSXziWG3EpwEmBwAN72/S2O/c7gAAAABJRU5ErkJggg==&logoColor=white&style=for-the-badge)
 ## PLEASE HELP
 
 Since this is my first NPM module and I am only barely familiar with node, this program only barely works. The following things need to be addressed:
